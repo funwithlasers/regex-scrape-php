@@ -3,7 +3,6 @@
 
 $url = 'https://cs.txstate.edu/accounts/profiles/hs15/';
 $html = file_get_contents($url);
-$html = file_get_contents('/Users/mjlarson13/Documents/test-html-parse.html');
 
 //Capture name
 preg_match_all('#<h3 class="heading-title pull-left">(.*?)</h3>#s', $html, $arr);
