@@ -1,0 +1,8 @@
+Array
+(
+    [name] => Dr. Byron Gao
+    [education] => BS, PhD, Simon Fraser University
+    [interests] => Data mining, databases, information retrieval
+    [email] => bgao@txstate.edu
+    [website] => http://cs.txstate.edu/~jg66
+)

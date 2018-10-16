@@ -28,7 +28,10 @@ function mini($file){
 
   //Convert all html special characters back to symbols
   foreach($info as &$elem)  $elem = htmlspecialchars_decode($elem);
-  print_r($info);
+  $fout = $info["name"];
+  $fout = preg_replace('#\. | #', '_', $fout);
+  $fout = $fout . '.txt';
+  file_put_contents($fout, print_r($info, true));
 }
 
 $ex1 = './Byron_Gao.html';
